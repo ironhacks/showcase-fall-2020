@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13033,14 +13033,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -13167,9 +13167,9 @@ div#notebook {
     <span class="k">return</span> <span class="p">{</span>
         <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span>
         <span class="s1">&#39;fillColor&#39;</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span>
-            <span class="s1">&#39;red&#39;</span><span class="p">,</span> 
-            <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> 
-            <span class="s1">&#39;green&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;red&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;yellow&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;green&#39;</span><span class="p">,</span>
             <span class="s1">&#39;orange&#39;</span>
         <span class="p">]),</span>
     <span class="p">}</span>
@@ -13222,8 +13222,8 @@ div#notebook {
 
 
 
- 
- 
+
+
 <div id="c6591d16-b4e0-47cb-95df-f5e8d3c81565"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
@@ -13300,8 +13300,8 @@ var element = $('#c6591d16-b4e0-47cb-95df-f5e8d3c81565');
 
 
 
- 
- 
+
+
 <div id="e9188a54-e2ca-4dab-87fb-cf10ac25aa39"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
@@ -13491,7 +13491,7 @@ var element = $('#e9188a54-e2ca-4dab-87fb-cf10ac25aa39');
         <span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;latitude&quot;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;week_number&quot;</span><span class="p">]</span><span class="o">/</span><span class="mi">44</span><span class="p">),</span> <span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;longitude&quot;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;week_number&quot;</span><span class="p">]</span><span class="o">/</span><span class="mi">44</span><span class="p">)],</span>
         <span class="n">draggable</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="p">)</span>
-    
+
     <span class="n">marker_message</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">()</span>
     <span class="n">marker_message</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;&lt;strong&gt;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;poi_cbg&quot;</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;&lt;/strong&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;br&gt;Visit Count: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;raw_visit_counts&quot;</span><span class="p">])</span>
     <span class="n">marker</span><span class="o">.</span><span class="n">popup</span> <span class="o">=</span> <span class="n">marker_message</span>
@@ -13519,8 +13519,8 @@ var element = $('#e9188a54-e2ca-4dab-87fb-cf10ac25aa39');
 
 
 
- 
- 
+
+
 <div id="8d9bde13-498a-4c12-b15d-8d3330c95c1a"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
@@ -13577,7 +13577,7 @@ var element = $('#8d9bde13-498a-4c12-b15d-8d3330c95c1a');
         <span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">long</span><span class="p">],</span>
         <span class="n">draggable</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="p">)</span>
-    
+
     <span class="n">marker_message</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">()</span>
     <span class="n">marker_message</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;&lt;strong&gt;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cbgs</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;&lt;/strong&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;br&gt;Visit Count: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">lst_cbgs_40_44_diff</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
     <span class="n">marker</span><span class="o">.</span><span class="n">popup</span> <span class="o">=</span> <span class="n">marker_message</span>
@@ -13605,8 +13605,8 @@ var element = $('#8d9bde13-498a-4c12-b15d-8d3330c95c1a');
 
 
 
- 
- 
+
+
 <div id="7d883f87-c1a3-4186-9ae7-7ab0746e858f"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
@@ -13644,7 +13644,7 @@ var element = $('#7d883f87-c1a3-4186-9ae7-7ab0746e858f');
     <span class="n">temp_df2</span> <span class="o">=</span> <span class="n">temp_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;week_number&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s2">&quot;week_number&quot;</span><span class="p">])</span>
     <span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">temp_df2</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">temp_df2</span><span class="p">[[</span><span class="s2">&quot;raw_visit_counts&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
-    
+
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Temporal Development of the 10 most crowded CBGs&quot;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Week Number&quot;</span><span class="p">)</span>
@@ -13706,7 +13706,7 @@ var element = $('#7d883f87-c1a3-4186-9ae7-7ab0746e858f');
     <span class="n">temp_df2</span> <span class="o">=</span> <span class="n">temp_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;week_number&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s2">&quot;week_number&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">temp_df2</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">temp_df2</span><span class="p">[[</span><span class="s2">&quot;raw_visit_counts&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
-    
+
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Temporal Development of the 10 CBGs with the Greatest “increase” of Foot Traffic from Week 40 to 44&quot;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Week Number&quot;</span><span class="p">)</span>
@@ -13811,7 +13811,7 @@ var element = $('#7d883f87-c1a3-4186-9ae7-7ab0746e858f');
   </div>
 </body>
 
- 
+
 
 
 </html>
